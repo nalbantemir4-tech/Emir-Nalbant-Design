@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Emir NALBANT – Endüstriyel Tasarımcı. Ürün tasarımı, UX araştırması ve inovasyon alanlarında uzman. Portföy ve hakkında sayfası." />
+  <title>Emir NALBANT – Endüstriyel Tasarımcı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- GLOBAL BACKGROUND CANVAS -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#10022;</span>
+        <span class="logo-text">Emir<span>NALBANT</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Hakk&#305;mda</a></li>
+        <li><a href="#expertise">Uzmanl&#305;k</a></li>
+        <li><a href="#portfolio">Portf&#246;y</a></li>
+        <li><a href="#process">S&#252;re&#231;</a></li>
+        <li><a href="#contact">&#304;leti&#351;im</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">&#304;&#351;birli&#287;i Yapal&#305;m</a>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="badge">End&#252;striyel Tasar&#305;mc&#305; &amp; Mekanik Tasar&#305;mc&#305;</div>
+      <h1 class="hero-title">
+        Emir NALBANT<br />
+        <span class="gradient-text">Tasar&#305;m&#305; Ke&#351;fediyorum</span>
+      </h1>
+      <p class="hero-sub">
+        &#220;r&#252;nleri estetik, i&#351;levsel ve insan odakl&#305; bir perspektifle tasar&#305;l&#305;yorum.<br />
+        Fikirden prototipe &mdash; her ad&#305;mda anlam yarat&#305;yorum.
+      </p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">Projelerimi G&#246;r</a>
+        <a href="#about" class="btn btn-ghost">Hakk&#305;mda &#8595;</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="40">0</span><span>+</span>
+          <p>Tamamlanan Proje</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="2">0</span><span>.</span>
+          <p>S&#305;n&#305;f End&uuml;striyel Tasar&#305;m&nbsp;&#214;&#287;rencisi</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="12">0</span><span>+</span>
+          <p>&#214;d&#252;l &amp; Sertifika</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-wheel"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / KİMDİR -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card main-card">
+            <div class="card-icon">—</div>
+            <h3>E&#287;itim</h3>
+            <p>End&#252;striyel Tasar&#305;m 2. S&#305;n&#305;f &#214;&#287;rencisi &mdash; Karab&#252;k
+              &Uuml;niversitesi.</p>
+          </div>
+          <div class="about-card accent-card">
+            <div class="card-icon">—</div>
+            <h3>Uluslararas&#305; Deneyim</h3>
+            <p>Avrupa ve Asya pazarlar&#305; i&#231;in k&#252;resel markalarla i&#351; birlikleri
+              y&#252;r&#252;tt&#252;.</p>
+          </div>
+          <div class="floating-badge">Üretim Odaklı</div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">Emir NALBANT Kimdir?</div>
+          <h2 class="section-title">Tasar&#305;m Benim<br /><span class="gradient-text">D&#252;&#351;&#252;nce
+              Bi&#231;imim</span></h2>
+          <p class="section-desc">
+            End&#252;striyel tasar&#305;mc&#305; olarak &#252;r&#252;nleri yaln&#305;zca g&#246;rsel de&#287;il;
+            ergonomik, s&#252;rd&#252;r&#252;lebilir ve kullan&#305;c&#305; deneyimine dayal&#305; bir
+            yakla&#351;&#305;mla tasar&#305;l&#305;yorum.
+            Mobilyadan t&#252;ketici elektroni&#287;ine, medikal cihazlardan ula&#351;&#305;m ara&#231;lar&#305;na kadar
+            geni&#351; bir yelpazede proje geli&#351;tirdim.
+          </p>
+          <p class="section-desc" style="margin-top:14px;">
+            Tasar&#305;m benim i&#231;in bir ara&#231;tan &#231;ok bir dil. Bu dil arac&#305;l&#305;&#287;&#305;yla
+            insanlar&#305;n hayat&#305;na dokunan, sorunlar&#305; &#231;&#246;zen ve ilham veren objeler
+            yarat&#305;yorum.
+          </p>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info"><span>&#220;r&#252;n Tasar&#305;m&#305;</span><span>95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CAD / 3D Modelleme</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>UX Ara&#351;t&#305;rmas&#305;</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>S&#252;rd&#252;r&#252;lebilir Tasar&#305;m</span><span>88%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE / UZMANLIK -->
+  <section class="services section" id="expertise">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Uzmanl&#305;k Alanlar&#305;</div>
+        <h2 class="section-title">Ne Yap&#305;yorum?</h2>
+        <p class="section-desc">End&#252;striyel tasar&#305;m&#305;n t&#252;m boyutlar&#305;nda kapsaml&#305; deneyim ve
+          uzmanl&#305;k.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-delay="0">
+          <div class="service-icon">01</div>
+          <h3>&#220;r&#252;n Tasar&#305;m&#305;</h3>
+          <p>Konsept geli&#351;tirmeden seri &#252;retime kadar eksiksiz tasar&#305;m s&#252;recini y&#246;netiyorum.
+          </p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+        <div class="service-card" data-delay="100">
+          <div class="service-icon">02</div>
+          <h3>CAD &amp; 3D Modelleme</h3>
+          <p>Rhino, SolidWorks ve Fusion 360 ile hassas dijital prototipler olu&#351;turuyorum.</p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+        <div class="service-card" data-delay="200">
+          <div class="service-icon">03</div>
+          <h3>UX Ara&#351;t&#305;rmas&#305;</h3>
+          <p>Kullan&#305;c&#305; g&#246;zlemi, odak gruplar&#305; ve ergonomi analizi ile insan merkezli tasar&#305;m.
+          </p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+        <div class="service-card" data-delay="300">
+          <div class="service-icon">04</div>
+          <h3>S&#252;rd&#252;r&#252;lebilir Tasar&#305;m</h3>
+          <p>&#199;evre dostu malzeme se&#231;imi ve d&#246;ng&#252;sel ekonomi prensipleriyle tasar&#305;m.</p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+        <div class="service-card" data-delay="400">
+          <div class="service-icon">05</div>
+          <h3>Prototipleme</h3>
+          <p>H&#305;zl&#305; prototip &#252;retimi, 3D bask&#305; ve model yap&#305;m&#305; ile fikirleri
+            somutla&#351;t&#305;r&#305;yorum.</p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+        <div class="service-card" data-delay="500">
+          <div class="service-icon">06</div>
+          <h3>&#220;retim Dan&#305;&#351;manl&#305;&#287;&#305;</h3>
+          <p>DFM (Design for Manufacturing) yakla&#351;&#305;m&#305;yla &#252;retilebilir tasar&#305;m
+            &#231;&#246;z&#252;mleri.</p>
+          <a href="#portfolio" class="service-link">Projeleri G&#246;r &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portf&#246;y</div>
+        <h2 class="section-title">Se&#231;ili Projeler</h2>
+        <p class="section-desc">Farkl&#305; sekt&#246;rlerde ger&#231;ekle&#351;tirdi&#287;im tasar&#305;m projelerinden
+          bir se&#231;ki.</p>
+      </div>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">T&#252;m&#252;</button>
+        <button class="filter-btn" data-filter="product">&#220;r&#252;n</button>
+        <button class="filter-btn" data-filter="furniture">Mobilya</button>
+        <button class="filter-btn" data-filter="medical">Medikal</button>
+        <button class="filter-btn" data-filter="transport">Ula&#351;&#305;m</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="product">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#14532d,#166534)">
+            <span class="portfolio-thumb-icon">🌿</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">&#220;r&#252;n</span>
+            <h3>Bah&#231;e Bak&#305;m Aletleri</h3>
+            <p>Ergonomik el aleti tasar&#305;m&#305;</p>
+          </div>
+        </div>
+        <div class="portfolio-item large" data-category="transport">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#052e16,#0f3d2b)">
+            <span class="portfolio-thumb-icon">🌊</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Ula&#351;&#305;m</span>
+            <h3>&#304;nsans&#305;z Deniz Arac&#305; Projesi</h3>
+            <p>Otonom deniz y&#252;zeyi arac&#305; tasar&#305;m&#305;</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="medical">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#1a3a2a,#15803d)">
+            <span class="portfolio-thumb-icon">🦾</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Medikal</span>
+            <h3>El Protezi Aparat&#305;</h3>
+            <p>Kullan&#305;c&#305; odakl&#305; t&#305;bbi cihaz</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="transport">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#0a1a10,#1e3a25)">
+            <span class="portfolio-thumb-icon">🏎️</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Ula&#351;&#305;m</span>
+            <h3>Motorsporlar&#305; Ar-Ge &#199;al&#305;&#351;mas&#305;</h3>
+            <p>Yar&#305;&#351; arac&#305; par&#231;a optimizasyonu</p>
+          </div>
+        </div>
+        <div class="portfolio-item large" data-category="product">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#064e3b,#065f46)">
+            <span class="portfolio-thumb-icon">🎧</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">&#220;r&#252;n</span>
+            <h3>Premium Kulakl&#305;k</h3>
+            <p>Akustik + ergonomik tasar&#305;m</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="furniture">
+          <div class="portfolio-thumb" style="background: linear-gradient(135deg,#14532d,#22c55e20)">
+            <span class="portfolio-thumb-icon">🪑</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Mobilya</span>
+            <h3>Katlanabilir Koltuk</h3>
+            <p>K&#252;&#231;&#252;k alan &#231;&#246;z&#252;m&#252;, &#231;ok fonksiyonlu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN PROCESS -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Tasar&#305;m S&#252;reci</div>
+        <h2 class="section-title">Nas&#305;l &#199;al&#305;&#351;&#305;yorum?</h2>
+        <p class="section-desc">Her projede izledi&#287;im sistematik ve insan merkezli tasar&#305;m metodolojisi.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-icon">&#x2192;</div>
+          <h3>Ke&#351;if &amp; Ara&#351;t&#305;rma</h3>
+          <p>Kullan&#305;c&#305; ihtiya&#231;lar&#305;n&#305;, pazar dinamiklerini ve teknik
+            k&#305;s&#305;tlamalar&#305; derinlemesine analiz ediyorum.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-icon">&#x2192;</div>
+          <h3>Konsept Geli&#351;tirme</h3>
+          <p>Sketch'ten dijital tasla&#287;a, birden fazla konsept alternatifi &#252;retiyor ve de&#287;erlendiriyorum.
+          </p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-icon">&#x2192;</div>
+          <h3>3D Modelleme</h3>
+          <p>Se&#231;ilen konsepti CAD yaz&#305;l&#305;mlar&#305; ile detayl&#305; dijital modele
+            d&#246;n&#252;&#351;t&#252;r&#252;yorum.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-icon">&#x2192;</div>
+          <h3>Prototip &amp; Test</h3>
+          <p>Fiziksel ya da dijital prototipler &#252;retip kullan&#305;c&#305; testleriyle do&#287;rulama
+            yap&#305;yorum.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">05</div>
+          <div class="step-icon">&#x2192;</div>
+          <h3>&#220;retim Deste&#287;i</h3>
+          <p>Teknik &#231;izimler ve DFM s&#252;reciyle &#252;r&#252;n&#252; ba&#351;ar&#305;yla seri &#252;retime
+            haz&#305;rl&#305;yorum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Referanslar</div>
+        <h2 class="section-title">&#304;&#351; Birli&#287;i<br /><span class="gradient-text">Yapanlar
+            Anlat&#305;yor</span></h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Emir'in tasar&#305;m s&#252;reci son derece sistematik ve kullan&#305;c&#305; odakl&#305;.
+              &#220;r&#252;n&#252;m&#252;z Emir ile &#231;al&#305;&#351;tıktan sonra sat&#305;&#351;larda %120
+              art&#305;&#351; ya&#351;ad&#305;."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#6366f1,#a855f7)">K</div>
+              <div><strong>Kemal Arslan</strong><span>CEO, NovaHome Mobilya</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Medikal cihaz projemizde Emir'in ergonomi bilgisi ve kullan&#305;c&#305; ara&#351;t&#305;rmas&#305;
+              yakla&#351;&#305;m&#305; ger&#231;ekten fark yaratt&#305;. &#199;ok de&#287;erli bir i&#351;
+              birli&#287;iydi."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#3b82f6)">A</div>
+              <div><strong>Dr. Ay&#351;e K&#305;l&#305;&#231;</strong><span>Ar-Ge Direkt&#246;r&#252;, MedTech</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Konsept a&#351;amas&#305;ndan &#252;retime kadar her ad&#305;mda Emir'in rehberli&#287;i sayesinde
+              projemiz zamanında ve b&#252;t&#231;e dahilinde tamamland&#305;."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">M</div>
+              <div><strong>Murat &#350;ahin</strong><span>Kurucu, EcoDesign Studio</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-orb cta-orb1"></div>
+    <div class="cta-orb cta-orb2"></div>
+    <div class="container">
+      <h2>Bir Sonraki Projenizde<br /><span class="gradient-text">Birlikte Tasar&#305;layal&#305;m</span></h2>
+      <p>&#220;r&#252;n&#252;n&#252;ze hayat vermek i&#231;in haz&#305;r&#305;m. Hemen ileti&#351;ime ge&#231;in.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Proje Teklifi Al &#8594;</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">&#304;leti&#351;im</div>
+          <h2 class="section-title">Birlikte<br />&#199;al&#305;&#351;al&#305;m</h2>
+          <p class="section-desc">&#220;r&#252;n fikrinizi, projenizi veya i&#351; birli&#287;i teklifinizi benimle
+            payla&#351;&#305;n.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x25A2;</div>
+              <div><strong>Konum</strong>
+                <p>&#304;stanbul, T&#252;rkiye</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">@</div>
+              <div><strong>E-posta</strong>
+                <p>emir@emirnalbant.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#x25B3;</div>
+              <div><strong>&#199;al&#305;&#351;ma &#350;ekli</strong>
+                <p>Freelance &amp; Tam Zamanl&#305; &#304;&#351; Birli&#287;i</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" title="LinkedIn">in</a>
+            <a href="#" class="social-btn" title="Behance">Be</a>
+            <a href="#" class="social-btn" title="Instagram">Ig</a>
+            <a href="#" class="social-btn" title="Dribbble">Dr</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Ad Soyad</label>
+                <input type="text" placeholder="Ad&#305;n&#305;z" required />
+              </div>
+              <div class="form-group">
+                <label>E-posta</label>
+                <input type="email" placeholder="email@domain.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Proje T&#252;r&#252;</label>
+              <select>
+                <option>&#220;r&#252;n Tasar&#305;m&#305;</option>
+                <option>Mobilya Tasar&#305;m&#305;</option>
+                <option>Medikal Cihaz</option>
+                <option>UX Ara&#351;t&#305;rmas&#305;</option>
+                <option>Prototipleme</option>
+                <option>&#220;retim Dan&#305;&#351;manl&#305;&#287;&#305;</option>
+                <option>Di&#287;er</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Projenizi Anlat&#305;n</label>
+              <textarea rows="5"
+                placeholder="&#220;r&#252;n&#252;n&#252;z, hedefleriniz ve beklentileriniz hakk&#305;nda k&#305;saca bilgi verin..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Mesaj G&#246;nder</span>
+              <span class="btn-arrow">&#8594;</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">&#10022;</span>
+            <span class="logo-text">Emir<span>NALBANT</span></span>
+          </a>
+          <p>End&#252;striyel tasar&#305;mc&#305;. &#304;nsan odakl&#305;, s&#252;rd&#252;r&#252;lebilir
+            &#252;r&#252;nler tasar&#305;l&#305;yorum.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Uzmanl&#305;k</h4>
+          <ul>
+            <li><a href="#expertise">&#220;r&#252;n Tasar&#305;m&#305;</a></li>
+            <li><a href="#expertise">CAD / 3D Modelleme</a></li>
+            <li><a href="#expertise">UX Ara&#351;t&#305;rmas&#305;</a></li>
+            <li><a href="#expertise">S&#252;rd&#252;r&#252;lebilir Tasar&#305;m</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sayfalar</h4>
+          <ul>
+            <li><a href="#about">Hakk&#305;mda</a></li>
+            <li><a href="#portfolio">Portf&#246;y</a></li>
+            <li><a href="#process">S&#252;re&#231;</a></li>
+            <li><a href="#contact">&#304;leti&#351;im</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>B&#252;lten</h4>
+          <p>Tasar&#305;m d&#252;nyas&#305;ndan g&#252;ncel i&#231;erikler i&#231;in abone olun.</p>
+          <div class="newsletter">
+            <input type="email" placeholder="E-posta adresiniz" />
+            <button>&#8599;</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&#169; 2026 Emir NALBANT. T&#252;m haklar&#305; sakl&#305;d&#305;r.</p>
+        <div class="footer-links">
+          <a href="#">Gizlilik Politikas&#305;</a>
+          <a href="#">CV &#304;ndir</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
