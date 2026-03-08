@@ -1,5 +1,10 @@
 /* ===== SCRIPT.JS – Emir NALBANT Portfolio ===== */
 
+// ─── EmailJS Init ─────────────────────────────────────
+(function () {
+    emailjs.init('R8fLAyS_CVaXA89-y');
+})();
+
 // ─── Navbar scroll effect ──────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -114,22 +119,47 @@ function stopAuto() { clearInterval(autoPlay); }
 dots.forEach((d, i) => d.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); }));
 startAuto();
 
-// ─── Contact Form ─────────────────────────────────────
+// ─── Contact Form – EmailJS ───────────────────────────
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', e => {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        const btn = contactForm.querySelector('button[type="submit"]');
-        const span = btn.querySelector('span');
-        span.textContent = '&#10003; Mesajınız gönderildi!';
-        btn.style.background = '#333';
+
+        const btn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const formMsg = document.getElementById('formMessage');
+
+        // Loading state
+        submitText.textContent = 'Gönderiliyor...';
         btn.disabled = true;
-        setTimeout(() => {
-            span.textContent = 'Mesaj Gönder';
-            btn.style.background = '';
-            btn.disabled = false;
-            contactForm.reset();
-        }, 3000);
+
+        // ⚠️ Template ID'nizi buraya ekleyin (EmailJS > Email Templates)
+        const SERVICE_ID = 'service_36lvinm';
+        const TEMPLATE_ID = 'template_7a478s1';
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, contactForm)
+            .then(function () {
+                submitText.textContent = 'Mesaj Gönder';
+                btn.disabled = false;
+                formMsg.style.display = 'block';
+                formMsg.style.background = 'rgba(34,197,94,0.12)';
+                formMsg.style.color = '#22c55e';
+                formMsg.style.border = '1px solid rgba(34,197,94,0.3)';
+                formMsg.textContent = '✓ Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağım.';
+                contactForm.reset();
+                setTimeout(() => { formMsg.style.display = 'none'; }, 6000);
+            })
+            .catch(function (error) {
+                submitText.textContent = 'Mesaj Gönder';
+                btn.disabled = false;
+                formMsg.style.display = 'block';
+                formMsg.style.background = 'rgba(239,68,68,0.12)';
+                formMsg.style.color = '#ef4444';
+                formMsg.style.border = '1px solid rgba(239,68,68,0.3)';
+                formMsg.textContent = '✗ Bir hata oluştu. Lütfen tekrar deneyin.';
+                console.error('EmailJS Error:', error);
+                setTimeout(() => { formMsg.style.display = 'none'; }, 6000);
+            });
     });
 }
 

@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -429,35 +430,38 @@
           <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
-                <label>Ad Soyad</label>
-                <input type="text" placeholder="Ad&#305;n&#305;z" required />
+                <label for="from_name">Ad Soyad</label>
+                <input type="text" id="from_name" name="from_name" placeholder="Ad&#305;n&#305;z" required />
               </div>
               <div class="form-group">
-                <label>E-posta</label>
-                <input type="email" placeholder="email@domain.com" required />
+                <label for="from_email">E-posta</label>
+                <input type="email" id="from_email" name="from_email" placeholder="email@domain.com" required />
               </div>
             </div>
             <div class="form-group">
-              <label>Proje T&#252;r&#252;</label>
-              <select>
+              <label for="project_type">Proje T&#252;r&#252;</label>
+              <select id="project_type" name="project_type">
                 <option>&#220;r&#252;n Tasar&#305;m&#305;</option>
                 <option>Mobilya Tasar&#305;m&#305;</option>
                 <option>Medikal Cihaz</option>
                 <option>UX Ara&#351;t&#305;rmas&#305;</option>
-                <option>Prototipleme</option>
+                <option>Protipleme</option>
                 <option>&#220;retim Dan&#305;&#351;manl&#305;&#287;&#305;</option>
                 <option>Di&#287;er</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Projenizi Anlat&#305;n</label>
-              <textarea rows="5"
+              <label for="message">Projenizi Anlat&#305;n</label>
+              <textarea id="message" name="message" rows="5"
                 placeholder="&#220;r&#252;n&#252;n&#252;z, hedefleriniz ve beklentileriniz hakk&#305;nda k&#305;saca bilgi verin..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <span>Mesaj G&#246;nder</span>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="submitText">Mesaj G&#246;nder</span>
               <span class="btn-arrow">&#8594;</span>
             </button>
+            <div id="formMessage"
+              style="display:none; margin-top:12px; padding:12px; border-radius:8px; text-align:center; font-weight:500;">
+            </div>
           </form>
         </div>
       </div>
